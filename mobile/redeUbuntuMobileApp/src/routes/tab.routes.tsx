@@ -1,9 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Feather, MaterialCommunityIcons } from '@expo/vector-icons'
+import { Feather, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'
 
 import Home from '../screens/Home'
 import FoodMenu from '../screens/FoodMenu'
 import ClassGrades from '../screens/ClassGrades'
+import CheckIn from '../screens/CheckIn'
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +38,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen 
-                name='Aulas do dia'
+                name='Aulas do dia - Tab'
                 component={ClassGrades}
                 options={{
                     tabBarIcon: ({ color, size }) =>
@@ -47,6 +48,20 @@ export default function TabRoutes() {
                             size={size}
                         />,
                     tabBarLabel: 'Aulas do dia'
+                }}
+            />
+            <Tab.Screen 
+                name="Check-in - Tab"
+                component={CheckIn}
+                options={{
+                    tabBarIcon: ({ color, size }) =>
+                        <MaterialIcons
+                            name='location-pin'
+                            color={color}
+                            size={size}
+                        />,
+                    tabBarLabel: 'Check-in'
+                
                 }}
             />
         </Tab.Navigator>

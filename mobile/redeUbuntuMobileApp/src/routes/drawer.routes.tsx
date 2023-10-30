@@ -1,5 +1,5 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { Feather, MaterialCommunityIcons } from '@expo/vector-icons'
+import { Feather, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'
 
 import TabRoutes from './tab.routes'
 
@@ -45,6 +45,19 @@ export default function DrawerRoutes() {
                             size={size}
                         />,
                     drawerLabel: 'Aulas do dia'
+                }}
+            />
+            <Drawer.Screen
+                name="Check-in - Drawer"
+                component={TabRoutes}
+                options={{
+                    drawerIcon: ({ color, size }) =>
+                        <MaterialIcons
+                            name='location-pin'
+                            color={color}
+                            size={size}
+                        />,
+                    drawerLabel: 'Check-in'
                 }}
             />
         </Drawer.Navigator>
