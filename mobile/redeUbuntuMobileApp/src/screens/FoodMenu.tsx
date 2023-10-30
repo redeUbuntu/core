@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function FoodMenu() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>FoodMenu</Text>
+      <Text style={styles.title}>Cardapio do dia</Text>
     </View>
   );
 }
