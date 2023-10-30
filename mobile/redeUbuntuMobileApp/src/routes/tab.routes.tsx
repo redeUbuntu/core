@@ -3,6 +3,7 @@ import { Feather, MaterialCommunityIcons } from '@expo/vector-icons'
 
 import Home from '../screens/Home'
 import FoodMenu from '../screens/FoodMenu'
+import ClassGrades from '../screens/ClassGrades'
 
 const Tab = createBottomTabNavigator();
 
@@ -33,6 +34,19 @@ export default function TabRoutes() {
                             size={size}
                         />,
                     tabBarLabel: 'Cardapio do dia'
+                }}
+            />
+            <Tab.Screen 
+                name='Aulas do dia'
+                component={ClassGrades}
+                options={{
+                    tabBarIcon: ({ color, size }) =>
+                        <MaterialCommunityIcons
+                            name='school'
+                            color={color}
+                            size={size}
+                        />,
+                    tabBarLabel: 'Aulas do dia'
                 }}
             />
         </Tab.Navigator>

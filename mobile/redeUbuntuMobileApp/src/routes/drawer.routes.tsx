@@ -7,7 +7,7 @@ const Drawer = createDrawerNavigator();
 
 export default function DrawerRoutes() {
     return (
-        <Drawer.Navigator screenOptions={{title: ''}}>
+        <Drawer.Navigator screenOptions={{ title: '' }}>
             <Drawer.Screen
                 name="Página inicial - Drawer"
                 component={TabRoutes}
@@ -32,6 +32,19 @@ export default function DrawerRoutes() {
                             size={size}
                         />,
                     drawerLabel: 'Cardapio do dia'
+                }}
+            />
+            <Drawer.Screen
+                name='Aulas do dia'
+                component={TabRoutes}
+                options={{
+                    drawerIcon: ({ color, size }) =>
+                        <MaterialCommunityIcons
+                            name='school'
+                            color={color}
+                            size={size}
+                        />,
+                    drawerLabel: 'Aulas do dia'
                 }}
             />
         </Drawer.Navigator>
