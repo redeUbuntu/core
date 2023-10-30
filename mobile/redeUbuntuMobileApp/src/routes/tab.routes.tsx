@@ -10,7 +10,7 @@ export default function TabRoutes() {
     return (
         <Tab.Navigator screenOptions={{ headerShown: false }}>
             <Tab.Screen
-                name="Página inicial"
+                name="Página inicial - Tab"
                 component={Home}
                 options={{
                     tabBarIcon: ({ color, size }) =>
@@ -23,7 +23,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen
-                name="Cardapio do dia"
+                name="Cardapio do dia - Tab"
                 component={FoodMenu}
                 options={{
                     tabBarIcon: ({ color, size }) =>
