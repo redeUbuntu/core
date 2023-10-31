@@ -1,2 +1,0 @@
-# core
-The core applications
