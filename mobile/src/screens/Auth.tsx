@@ -16,15 +16,15 @@ export default function Home() {
         <View className='space-y-4'>
           <TouchableOpacity className='py-3 bg-orange-400 mx-7 rounded-xl'>
             <Text className='text-xl font-bold text-center text-gray-700'>
-              Inscreva-se
+              Entrar
             </Text>
           </TouchableOpacity>
           <View className='flex-row justify-center'>
             <Text className='text-white font-semibold'>
-              Já tem uma conta?
+              Primeiro acesso?
             </Text>
             <TouchableOpacity>
-              <Text className='font-semibold text-orange-400'> Faça login </Text>
+              <Text className='font-semibold text-orange-400'> Cadastre-se </Text>
             </TouchableOpacity>
           </View>
         </View>

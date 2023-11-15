@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Feather, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'
 
 import Home from '../screens/Home'
+import Auth from '../screens/Auth'
 import FoodMenu from '../screens/FoodMenu'
 import ClassGrades from '../screens/ClassGrades'
 import CheckIn from '../screens/CheckIn'
@@ -13,7 +14,7 @@ export default function TabRoutes() {
         <Tab.Navigator screenOptions={{ headerShown: false }}>
             <Tab.Screen
                 name="Página inicial - Tab"
-                component={Home}
+                component={Auth}
                 options={{
                     tabBarIcon: ({ color, size }) =>
                         <Feather
