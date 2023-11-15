@@ -13,7 +13,7 @@ type Teacher struct {
 	Birthday time.Time `json:"birthday" valid:"notnull"`
 	Email    string `json:"email" valid:"-"`
 	Phone    string `json:"phone" valid:"-"`
-	Branch  *Branch `valid:"notnull"`
+	Branch  *Branch `valid:"-"`
 }
 
 func (teacher *Teacher) isValid() error {
